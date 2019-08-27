@@ -55,6 +55,10 @@ fs.readFile('listings.json', 'utf8', function(err, data) {
   //Creates the server
   
   //Start the server
+  
+  if(err) {
+    throw err;
+  }
 
   listingData = JSON.parse(data);
 
